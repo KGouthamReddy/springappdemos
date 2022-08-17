@@ -1,5 +1,6 @@
 package com.samples.S01springcoredi;
 
+import org.springframework.context.support.AbstractApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class App 
@@ -27,8 +28,23 @@ public class App
 //       Customer cust = (Customer) springContainer.getBean("customers");
 //       System.out.println(cust);
        
-       ShoppingCart sc = (ShoppingCart) springContainer.getBean("shoppingcart");
-       System.out.println(sc);
+//       ShoppingCart sc = (ShoppingCart) springContainer.getBean("shoppingcart");
+//       System.out.println(sc);
        
+//       ScoreCard sca = (ScoreCard) springContainer.getBean("scorecard");
+//       System.out.println(sca);
+//       
+//       AbstractApplicationContext springContext = new ClassPathXmlApplicationContext("com/samples/S01springcoredi/SpringConfig.xml");
+//       
+//       Patient p = (Patient) springContext.getBean("patient");
+//       System.out.println(p);
+//       springContext.registerShutdownHook();
+       
+    // create the spring container
+   	ClassPathXmlApplicationContext springContainer1 = new ClassPathXmlApplicationContext("com/samples/S01springcoredi/SpringConfig.xml");
+      
+      Employee emp = (Employee) springContainer1.getBean("emp"); 
+      System.out.println(emp);
+    
     }
 }
