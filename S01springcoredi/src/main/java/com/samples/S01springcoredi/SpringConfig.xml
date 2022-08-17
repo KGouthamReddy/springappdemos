@@ -12,7 +12,7 @@
 		p:name="Max" /> <bean name="emp1" class="com.samples.S01springcoredi.Employee" 
 		p:id="231" p:name="Max"/> <bean name="emp2" class="com.samples.S01springcoredi.Employee" 
 		p:id="231" p:name="Max"/> -->
-
+<!-- 
 	<bean name="hospital" class="com.samples.S01springcoredi.Hospital">
 		<property name="name" value="Oxford Hospitals" />
 		<property name="departments">
@@ -23,10 +23,10 @@
 
 			</list>
 		</property>
-	</bean>
+	</bean> -->
 
 
-	<bean name="Actors" class="com.samples.S01springcoredi.Actors">
+	<!-- <bean name="Actors" class="com.samples.S01springcoredi.Actors">
 		<property name="studio" value="Universal"></property>
 		<property name="actorname">
 			<set>
@@ -36,10 +36,10 @@
 			</set>
 		</property>
 
-	</bean>
+	</bean> -->
 	
 	
-	<bean name="customers" class="com.samples.S01springcoredi.Customer" p:pid="31">
+	<!-- <bean name="customers" class="com.samples.S01springcoredi.Customer" p:pid="31">
 	<property name="products">
 	<map>
 	<entry key="69000" value="iphone"></entry>
@@ -48,6 +48,14 @@
 	</map>
 	</property>
 	
-	</bean>
+	</bean> -->
+	
+	<bean name="items" class="com.samples.S01springcoredi.Item" p:id="101" p:name="Rice" p:price="1000" p:quantity="2" />
+	
+	<bean name="shoppingcart" class="com.samples.S01springcoredi.ShoppingCart" p:item-ref="items"/>
+	
+	
+	
+	
 
 </beans>

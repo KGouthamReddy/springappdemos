@@ -24,8 +24,11 @@ public class App
 //       Actors actor = (Actors) springContainer.getBean("Actors");
 //       System.out.println(actor);
 //       
-       Customer cust = (Customer) springContainer.getBean("customers");
-       System.out.println(cust);
+//       Customer cust = (Customer) springContainer.getBean("customers");
+//       System.out.println(cust);
+       
+       ShoppingCart sc = (ShoppingCart) springContainer.getBean("shoppingcart");
+       System.out.println(sc);
        
     }
 }
